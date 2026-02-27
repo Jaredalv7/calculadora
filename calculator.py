@@ -1,13 +1,13 @@
-def suma(a, b):
+def sumar(a, b):
     return a + b
 
-def resta(a, b):
+def restar(a, b):
     return a - b
 
-def multiplicacion(a, b):
+def multiplicar(a, b):
     return a * b
 
-def division(a, b):
+def dividir(a, b):
     if b == 0:
         return "Error: No se puede dividir entre 0"
     return a / b
