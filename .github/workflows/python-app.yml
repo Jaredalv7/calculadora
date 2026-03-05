@@ -21,6 +21,15 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Verificar HTML
+      run: |
+        if [ -f index.html ]; then
+          echo "index.html encontrado"
+        else
+          echo "Error: index.html no existe"
+          exit 1
+        fi
+
     - name: Ejecutar pruebas
       run: |
         python test_calculator.py
