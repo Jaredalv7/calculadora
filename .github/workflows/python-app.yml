@@ -32,4 +32,4 @@ jobs:
 
     - name: Ejecutar pruebas
       run: |
-        python test_calculator.py
+        python tests/test_calculator.py
